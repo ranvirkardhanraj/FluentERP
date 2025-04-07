@@ -505,8 +505,7 @@ ALTER TABLE `purchase_order`
 ALTER TABLE `sales_order`
   ADD CONSTRAINT `FK_customer_id` FOREIGN KEY (`Customer_id`) REFERENCES `customers` (`Customer_id`),
   ADD CONSTRAINT `FK_material_code` FOREIGN KEY (`material_code`) REFERENCES `materials` (`material_code`),
-  ADD CONSTRAINT `fk_sales_doc_no` FOREIGN KEY (`sales_doc_no`) REFERENCES `sales_orders_list` (`sales_doc_no`),
-  ADD CONSTRAINT `sales_order_ibfk_1` FOREIGN KEY (`Customer_id`) REFERENCES `customers` (`Customer_id`);
+  ADD CONSTRAINT `fk_sales_doc_no` FOREIGN KEY (`sales_doc_no`) REFERENCES `sales_orders_list` (`sales_doc_no`);
 
 --
 -- Constraints for table `sales_orders_list`
